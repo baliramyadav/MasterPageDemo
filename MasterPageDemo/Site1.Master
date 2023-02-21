@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="MasterPageDemo.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <header id="header">
+                <h1>Coder Baba</h1>
+            </header>
+            <nav id="nav">
+                <ul>
+                    <li><a href="home.aspx">Home</a></li>
+                    <li><a href="About.aspx">About</a></li>
+                    <li><a href="#">Article</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </nav>
+            <aside id="side">
+                <h1>news</h1>
+                <a href="#">
+                    <p>creating html website</p>
+                </a>
+                <a href="#">
+                    <p>learn css</p>
+                </a>
+                <a href="#">learn c#</a>
+            </aside>
+
+            <div id="con">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+            </div>
+            
+
+            <footer id="footer">
+                copyright @coderbaba  
+            </footer>
+
+            
+        </div>
+    </form>
+</body>
+</html>
